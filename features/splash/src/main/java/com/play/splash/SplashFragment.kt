@@ -14,8 +14,20 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.apply {
-
+            btnSignIn.setOnClickListener { navigateToSignIn() }
+            btnSignUp.setOnClickListener { navigateToSignUp() }
         }
+
     }
+
+    /**
+     * TODO navigate to SignInFragment in signin:module
+     */
+    private fun navigateToSignIn() {}
+
+    /**
+     * TODO navigate to SignUpFragment in signup:module
+     */
+    private fun navigateToSignUp() {}
 
 }
