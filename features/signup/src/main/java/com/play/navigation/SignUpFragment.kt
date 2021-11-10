@@ -1,14 +1,16 @@
-package com.play.splash
+package com.play.navigation
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.play.splash.databinding.FragmentSplashBinding
+import com.play.signup.R
+import com.play.signup.databinding.FragmentSignUpBinding
 
-class SplashFragment : Fragment(R.layout.fragment_splash) {
 
-    private val binding by viewBinding(FragmentSplashBinding::bind)
+class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
+
+    private val binding by viewBinding(FragmentSignUpBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -17,5 +19,4 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
         }
     }
-
 }
