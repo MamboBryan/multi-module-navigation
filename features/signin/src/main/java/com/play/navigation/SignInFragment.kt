@@ -7,7 +7,6 @@ import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.play.signin.R
 import com.play.signin.databinding.FragmentSignInBinding
-import dagger.hilt.android.AndroidEntryPoint
 
 class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
@@ -19,7 +18,7 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
         binding.apply {
 
-            edtName.setText("")
+            edtName.setText(viewModel.name)
 
             btnSignIn.setOnClickListener { navigateToDashboard() }
             btnSignUp.setOnClickListener { navigateToSignUp() }
